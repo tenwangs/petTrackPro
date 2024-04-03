@@ -5,6 +5,7 @@ import Realtime from '/public/realtime.png'
 import Global from '/public/global.png'
 import VirtualFence from '/public/virtualFence.png'
 import RoutePlayback from '/public/routePlayback.png'
+
 export default function Home() {
   return (
     <main  className="bg-[#FFFFFF] border border-shadow-gray-100">
@@ -18,9 +19,6 @@ export default function Home() {
   
     <Image src={Pet}  alt="pet" className="w-full h-86" > 
     </Image>
-    
-  
-    
   </div>
   <div>
     <p className="text-3xl font-semibold text-[#000000] text-center mt-8 mb-4">Key Features</p>
@@ -57,8 +55,30 @@ export default function Home() {
     <div className="w-2/6 h-80 ml-20 mt-12 bg-[#1579B1] rounded-xl">
     <p className="ml-8 mt-2 text-white">Advanced technology</p>
     <p className="ml-8 mt-2 text-white text-xl font-semibold">How it works</p>
+   <div role="tablist" className="tabs tabs-bordered mt-4">
+  <input type="radio" name="my_tabs_1" role="tab" className="tab ml-8 text-l text-[#ffffff] " aria-label="01 Subscription" checked />
+  <div role="tabpanel" className="tab-content p-10 text-[#ffffff]">GPS pet trackers vary in price, typically ranging from around $80 to $150.
+Cellular GPS trackers come with additional costs due to reliance on cellular networks. Service plans usually cost between $2 and $10 per month
+time.</div>
+
+  <input type="radio" name="my_tabs_1" role="tab" className="tab text-[#ffffff]" aria-label="02 Charge" checked />
+  <div role="tabpanel" className="tab-content p-10 text-[#ffffff]">After receiving YoPets GPS Tracking device, please Sign Up in the YoPets
+mobile app and choose a plan to subscribe. You may choose from monthly
+plan, 3 months plan or annual plan.You may upgrade between plans at any
+time.</div>
+
+<input type="radio" name="my_tabs_1" role="tab" className="tab text-[#ffffff]" aria-label="03 understand" checked />
+  <div role="tabpanel" className="tab-content p-10 text-[#ffffff]">A GPS pet tracker doesn’t guarantee finding a lost pet, but it increases the chances.
+The Whistle Go Explore is accurate, easy to use, and suitable for cats and dogs. However, its GPS accuracy can be finicky in spotty service areas
+time.</div>
+
+  <input type="radio" name="my_tabs_1" role="tab" className="tab text-[#ffffff]" aria-label="04 Track" checked />
+  <div role="tabpanel" className="tab-content p-10 text-[#ffffff]">Pet trackers use GPS technology to pinpoint your pet’s location.
+Real-time data is transmitted to your smartphone via an app.
+time.</div>
+</div></div>
     </div>
-    </div>
+   
     
   
     </main>
