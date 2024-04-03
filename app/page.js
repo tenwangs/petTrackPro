@@ -8,7 +8,7 @@ import RoutePlayback from '/public/routePlayback.png'
 
 export default function Home() {
   return (
-    <main  className="bg-[#FFFFFF] border border-shadow-gray-100">
+    <main  className="bg-[#FFFFFF] border border-shadow-gray-100 ">
   <div className="w-full h-1/2">
   <div className="absolute mt-60 ml-40">
       <p className="text-white text-6xl">GPS Pet Tracking <br></br> For Pet Dogs</p>
@@ -52,7 +52,7 @@ export default function Home() {
       <div className="w-2/6  ml-60 border-rounded-full mt-8  ">
       <Image src={gpsArchitecture}  alt='image' className="w-full border-gray-800 h-80 mt-2"></Image>
     </div>
-    <div className="w-2/6 h-80 ml-20 mt-12 bg-[#1579B1] rounded-xl">
+    <div className="w-2/6 h-80 ml-20 mt-12 bg-[#1579B1] rounded-xl mb-10">
     <p className="ml-8 mt-2 text-white">Advanced technology</p>
     <p className="ml-8 mt-2 text-white text-xl font-semibold">How it works</p>
    <div role="tablist" className="tabs tabs-bordered mt-4">

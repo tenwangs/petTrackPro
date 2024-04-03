@@ -27,7 +27,7 @@ const support = () => {
        
         </div>
        
-       <div className="mt-20 ">
+       <div className="mt-20 mb-8 ">
 
        <div className="collapse collapse-arrow border border-gray-200 w-5/6 ml-28 ">
   <input type="radio" name="my-accordion-2" defaultChecked /> 

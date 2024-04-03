@@ -37,7 +37,7 @@ const aboutUs = () => {
         </div>
         <p className='text-center mt-20 text-4xl font-semibold text-[#1579B1]'>Meet Team </p>
 
-        <div>
+        <div className='mb-10'>
             <div className='flex flex-col mt-8'>
                 <Image src={Img1} alt='Team' className='mx-auto mt-4 p-4 rounded-full w-60 h-60'></Image>
                 <p className='text-gray-800 text-center font-bold text-l'>Mr. Manoh </p>
