@@ -1,4 +1,4 @@
-import backgrounds from '/public/backk.png'
+import backgrounds from '/public/im.webp'
 import collar from '/public/collar.jpg'
 import Image from 'next/image'
 import BackI from '/public/backI.png'
@@ -8,7 +8,7 @@ const gps = () => {
     return ( 
         <main>
         <div className='flex flex-row bg-white bg-[#ffffff] '>
-            <div className='mt-20 ml-40'>
+            <div className=' ml-40 mt-12 bg-gray-400 rounded-full mb-12'>
             <Image src={backgrounds} alt='pet' width={700} className='rounded-3xl'></Image>
         </div>
         <div className='mt-20 ml-28 ' >

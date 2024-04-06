@@ -4,9 +4,9 @@ export default function Footer () {
              <div className="bg-gray-200 w-full h-58 ">
            <footer className="footer p-10 bg-[#5A92B1] text-base-content">
            <div className="mt-8 ml-20">
-            <p className="text-[#FFFFFF] font-semibold">Your Pet Track is a GPS<p></p>
-Pet Tracking solution that<p></p>
-can be used globally</p>
+            <a className="text-[#FFFFFF] font-semibold">Your Pet Track is a GPS<br></br>
+Pet Tracking solution that <br></br>
+can be used globally</a>
            </div>
   <nav>
     <h6 className="font-semibold text-xl text-[#FFFFFF] mb-4">About Us</h6> 
@@ -30,9 +30,9 @@ can be used globally</p>
   </nav> 
   <form>
     <h6 className="font-semibold text-xl text-[#FFFFFF] mb-2">Newsletter</h6> 
-    <p className="text-[#FFFFFF] font-semibold mt-3">Subscribe to our e-newsletter to<br></br>
+    <a className="text-[#FFFFFF] font-semibold mt-3">Subscribe to our e-newsletter to<br></br>
 learn about new features and<br></br>
-get discounts.</p>
+get discounts.</a>
     <fieldset className="form-control w-80">
       <label className="label mt-2">
         <span className="label-text font-semibold text-[#FFFFFF]">Enter your email address</span>

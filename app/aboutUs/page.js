@@ -8,11 +8,11 @@ const aboutUs = () => {
         <main className='bg-[#ffffff] mt-4'>
             <div className='flex flex-row'>
             <div className=''>
-                <Image src={Logo} alt='Logo' className='w-2/3 h-2/3 rounded-full ml-20' ></Image>
+                <Image src={Logo} alt='Logo' className='w-2/3 h-2/3 rounded-full ml-40' ></Image>
                 <p className='text-5xl ml-32 mt-8 text-[#1579B1] font-semibold'>Your pet-track  </p>
                 <p className='text-5xl ml-60 mt-8 text-[#1579B1] font-semibold'>pro</p>
             </div>
-            <div className='bg-white border border-gray-200 w-2/4 ml-48 rounded-xl mt-8 '>
+            <div className='bg-white border border-gray-200 w-2/4 ml-20 rounded-xl mt-8 '>
             <div className='bg-[#1579B1] rounded-l w-full'>
                 <p className='ml-48 font-semibold ml-60 text-[#1579B1] text-2xl text-[#ffffff]'>All about Pet Track pro</p>
             </div>
