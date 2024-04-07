@@ -12,19 +12,19 @@ can be used globally</a>
   <nav>
     <h6 className="font-semibold text-xl text-[#FFFFFF] mb-4">About Us</h6>
     <div className="flex flex-row">
-    <IoIosArrowForward className=""/> 
+    <IoIosArrowForward className="fill-[#FF6251]"/> 
       <a className="link link-hover text-[#FFFFFF] ml-2"> 
       Our Story</a>
     </div> 
     
     <div className="flex flex-row">
-    <IoIosArrowForward className=""/> 
+    <IoIosArrowForward className="fill-[#FF6251]"/> 
       <a className="link link-hover text-[#FFFFFF] ml-2"> 
       contacts </a>
     </div> 
 
     <div className="flex flex-row">
-    <IoIosArrowForward className=""/> 
+    <IoIosArrowForward className="fill-[#FF6251]"/> 
       <a className="link link-hover text-[#FFFFFF] ml-2"> 
       Review </a>
     </div> 
@@ -33,20 +33,20 @@ can be used globally</a>
   <nav>
     <h6 className="font-semibold text-xl text-[#FFFFFF] mb-4">Information</h6> 
     <div className="flex flex-row">
-    <IoIosArrowForward className=""/> 
+    <IoIosArrowForward className="fill-[#FF6251]"/> 
       <a className="link link-hover text-[#FFFFFF] ml-2"> 
       Blog</a>
     </div> 
 
    <div className="flex flex-row">
-    <IoIosArrowForward className=""/> 
+    <IoIosArrowForward className="fill-[#FF6251]"/> 
       <a className="link link-hover text-[#FFFFFF] ml-2"> 
       Products</a>
     </div> 
 
    
    <div className="flex flex-row">
-    <IoIosArrowForward className=""/> 
+    <IoIosArrowForward className="fill-[#FF6251]"/> 
       <a className="link link-hover text-[#FFFFFF] ml-2"> 
       how it works </a>
     </div> 
@@ -55,19 +55,19 @@ can be used globally</a>
   <nav>
     <h6 className="font-semibold text-xl text-[#FFFFFF] mb-4">Community</h6> 
    <div className="flex flex-row">
-    <IoIosArrowForward className=""/> 
+    <IoIosArrowForward className="fill-[#FF6251]"/> 
       <a className="link link-hover text-[#FFFFFF] ml-2"> 
       Refer a friend </a>
     </div> 
 
     <div className="flex flex-row">
-    <IoIosArrowForward className=""/> 
+    <IoIosArrowForward className="fill-[#FF6251]"/> 
       <a className="link link-hover text-[#FFFFFF] ml-2"> 
       Partner with us </a>
     </div> 
 
    <div className="flex flex-row">
-    <IoIosArrowForward className=""/> 
+    <IoIosArrowForward className="fill-[#FF6251]"/> 
       <a className="link link-hover text-[#FFFFFF] ml-2"> 
       Our Customer</a>
     </div> 
