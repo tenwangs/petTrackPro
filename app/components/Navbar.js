@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Paw from '/public/pawLogo.png'
 import Image from 'next/image'
+
 export default function Navbar(){
     return(
         <main className='border border-gray-200'>
@@ -11,7 +12,7 @@ export default function Navbar(){
         <Link href={'./gps'} className="ml-12 text-[#3D3D3D] text-l">GPS pet Tracker</Link>
         <Link href={'./support'} className="ml-12 text-[#3D3D3D] text-l">Support</Link>
         <Link href={'./FAQ'} className="ml-12 text-[#3D3D3D] text-l">FAQ</Link>
-        <Link href={'./aboutUs'} className="ml-12 text-[#3D3D3D] text-l">About_US</Link>
+        <Link href={'./aboutUs'} className="ml-12 text-[#3D3D3D] text-l">About_US  </Link>
          </div>
         
         <div className='mt-8'>

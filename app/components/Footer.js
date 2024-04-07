@@ -1,3 +1,4 @@
+import { IoIosArrowForward } from "react-icons/io";
 export default function Footer () {
     return ( 
         <main>
@@ -9,24 +10,68 @@ Pet Tracking solution that <br></br>
 can be used globally</a>
            </div>
   <nav>
-    <h6 className="font-semibold text-xl text-[#FFFFFF] mb-4">About Us</h6> 
-    <a className="link link-hover text-[#FFFFFF]">Our Story</a>
-    <a className="link link-hover text-[#FFFFFF]">Contact</a>
-    <a className="link link-hover  text-[#FFFFFF]">Review</a>
+    <h6 className="font-semibold text-xl text-[#FFFFFF] mb-4">About Us</h6>
+    <div className="flex flex-row">
+    <IoIosArrowForward className=""/> 
+      <a className="link link-hover text-[#FFFFFF] ml-2"> 
+      Our Story</a>
+    </div> 
+    
+    <div className="flex flex-row">
+    <IoIosArrowForward className=""/> 
+      <a className="link link-hover text-[#FFFFFF] ml-2"> 
+      contacts </a>
+    </div> 
+
+    <div className="flex flex-row">
+    <IoIosArrowForward className=""/> 
+      <a className="link link-hover text-[#FFFFFF] ml-2"> 
+      Review </a>
+    </div> 
     
   </nav> 
   <nav>
     <h6 className="font-semibold text-xl text-[#FFFFFF] mb-4">Information</h6> 
-    <a className="link link-hover  text-[#FFFFFF]">Blog</a>
-    <a className="link link-hover  text-[#FFFFFF]">Product</a>
-    <a className="link link-hover  text-[#FFFFFF]">How it works </a>
+    <div className="flex flex-row">
+    <IoIosArrowForward className=""/> 
+      <a className="link link-hover text-[#FFFFFF] ml-2"> 
+      Blog</a>
+    </div> 
+
+   <div className="flex flex-row">
+    <IoIosArrowForward className=""/> 
+      <a className="link link-hover text-[#FFFFFF] ml-2"> 
+      Products</a>
+    </div> 
+
+   
+   <div className="flex flex-row">
+    <IoIosArrowForward className=""/> 
+      <a className="link link-hover text-[#FFFFFF] ml-2"> 
+      how it works </a>
+    </div> 
     
   </nav> 
   <nav>
     <h6 className="font-semibold text-xl text-[#FFFFFF] mb-4">Community</h6> 
-    <a className="link link-hover  text-[#FFFFFF]">Refer with us</a>
-    <a className="link link-hover  text-[#FFFFFF]">Partner with us </a>
-    <a className="link link-hover  text-[#FFFFFF]">Our Customer</a>
+   <div className="flex flex-row">
+    <IoIosArrowForward className=""/> 
+      <a className="link link-hover text-[#FFFFFF] ml-2"> 
+      Refer a friend </a>
+    </div> 
+
+    <div className="flex flex-row">
+    <IoIosArrowForward className=""/> 
+      <a className="link link-hover text-[#FFFFFF] ml-2"> 
+      Partner with us </a>
+    </div> 
+
+   <div className="flex flex-row">
+    <IoIosArrowForward className=""/> 
+      <a className="link link-hover text-[#FFFFFF] ml-2"> 
+      Our Customer</a>
+    </div> 
+
   </nav> 
   <form>
     <h6 className="font-semibold text-xl text-[#FFFFFF] mb-2">Newsletter</h6> 
