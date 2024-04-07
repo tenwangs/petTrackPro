@@ -3,6 +3,7 @@ import collar from '/public/collar.jpg'
 import Image from 'next/image'
 import BackI from '/public/backI.png'
 import Tutoral from '/public/tutoral.png'
+import { FaCheck } from "react-icons/fa";
 
 const gps = () => {
     return ( 
@@ -29,10 +30,26 @@ const gps = () => {
             </div>
             <div className='flex flex-col mt-8 border border-shadow-[#808080] rounded-xl p-8 mb-20'>
             <p className=' text-[#000000] text-xl font-semibold'> Whats in the box?</p>
-            <p className='mt-2 text-[#808080] text-sm'>Price includes GPS tracker</p>
-            <p className='mt-2 text-[#808080] text-sm'>SIM Card</p>
-            <p className='mt-2 text-[#808080] text-sm'>Charging cable </p>
-            <p className='mt-2 text-[#808080] text-sm'>Silicone case</p>
+            <div className='flex flex-row mt-4'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>Price includes GPS tracker</p>
+            </div>
+            
+            
+          <div className='flex flex-row mt-2'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>Sim card</p>
+            </div>
+            
+            <div className='flex flex-row mt-2'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>Charging cable</p>
+            </div>
+            
+            <div className='flex flex-row mt-2'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>Silicon case </p>
+            </div>
 
             </div>
             
@@ -51,14 +68,44 @@ const gps = () => {
             <p className='text-gray-500 ml-10 mt-2 text-sm'>Over hundreds dogs are lost or stolen every year.Pet-track pro <br></br> is dedicately working towards reducing the number by helping <br></br>you track your pet quickly no matter how far they are from you. </p>
         </div>
         <div className='flex flex-col ml-52 text-gray-500 rounded-xl p-8 bg-gray-100'>
-            <p className='text-sm'> GPS tracking ( 2-3 miniutes interval )</p>
-            <p className='mt-2 text-sm'>Real time tracking ( 5-10 seconds interval )</p>
-            <p className='mt-2 text-sm'>Virtual fence</p>
-            <p className='mt-2 text-sm'>Instant Notification </p>
-            <p className='mt-2 text-sm'>Route playback</p>
-            <p className='mt-2 text-sm'>Global coverage </p>
-            <p className='mt-2 text-sm'>Unlimited location history</p>
+         <div className='flex flex-row mt-2'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>GPS tracking ( 2-3 miniutes interval )</p>
+            </div>
 
+            <div className='flex flex-row mt-3'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>Real time tracking ( 5-10 seconds interval )</p>
+            </div>
+            
+            <div className='flex flex-row mt-3'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>Virtual fence</p>
+            </div>
+
+           <div className='flex flex-row mt-3'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>Instant Notification</p>
+            </div>
+
+            <div className='flex flex-row mt-3'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>Route playback</p>
+            </div>
+
+            <div className='flex flex-row mt-3'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>Global coverage</p>
+            </div>
+
+            <div className='flex flex-row mt-3'>
+            <FaCheck className='fill-[#1579B1]'/>
+            <p className=' text-[#808080] text-sm ml-2'>Unlimited location history</p>
+            </div>
+           
+            
+            
+           
             </div>
             <div className='flex flex-row ml-4'>
                 <button className='border border-blue-400 w-28 h-10 rounded-full ml-52'>1</button>
