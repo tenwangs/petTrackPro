@@ -12,9 +12,9 @@ export default function Footer() {
   return (
 
       <div className="bg-[#497FA4] w-full min-h-52  flex justify-center items-center p-5  ">
-        <footer className=" flex flex-col  lg:flex-row justify-evenly items-center w-full">
+        <footer className=" flex flex-col lg:flex-row justify-between items-center w-full">
          <div>
-          <nav className="p-5">
+          <nav className="">
             <ul className="flex justify-evenly items-center space-x-5 text-md text-[#fafafa]">
               {links.map((link) => (
                 <li key={link.name} className="uppercase">

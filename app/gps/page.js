@@ -64,7 +64,7 @@ const gps = () => {
       </div>
       <div className="flex flex-col lg:flex-row justify-evenly items-center  bg-gray-100 ">
         <div className="bg-gray-100 p-5 w-full lg:w-1/2">
-      <Image src={require("/public/assets/images/backI.png")} alt="backI" className="w-[90%]"></Image>
+      <Image src={BackI} alt="backI" className="w-[90%]"></Image>
         </div>
         <div className="flex flex-col justify-center items-center w-full lg:w-1/2 p-3">
           <div className="mt-4 w-2/3">
