@@ -17,7 +17,7 @@ export default function Navbar({ children }) {
 
 
   return (
-    <div className="drawer ">
+    <div className="drawer flex flex-col">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col justify-between min-h-screen">
         {/* Navbar */}
