@@ -94,7 +94,7 @@ export default function Home() {
 
       </div>
 
-      <div className="flex flex-col lg:flex-row w-full justify-center items-center  p-4 z-0">
+      <div className="flex flex-col lg:flex-row w-full justify-center items-center  p-4 ">
           <Image
             src={gpsArchitecture}
             alt="image"
@@ -103,7 +103,7 @@ export default function Home() {
             className="w-[90%] lg:w-1/2 h-full border-gray-800 mt-2 z-0"
           />
         
-        <div className="w-[90%] lg:w-1/2  bg-[#497FA4] rounded-xl h-auto">
+        <div className="w-[90%] lg:w-1/2  bg-[#497FA4] rounded-xl h-[400px]">
           <p className="ml-8 mt-5 text-white text-sm">Advanced technology</p>
           <p className="ml-8 mt-2 text-white text-2xl font-semibold">
             How it works
