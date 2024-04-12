@@ -62,7 +62,7 @@ const LoginPage = () => {
             <Image
               src={Login}
               alt="login"
-              className="w-[100%] h-[100%]" 
+              className="w-[300px] h-[300px]" 
             />
           </div>
        
