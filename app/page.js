@@ -132,8 +132,8 @@ export default function Home() {
               aria-label="02 Charge"
             />
             <div role="tabpanel" className="tab-content p-10 text-[#ffffff]">
-              After receiving YoPets GPS Tracking device, please Sign Up in the
-              YoPets mobile app and choose a plan to subscribe. You may choose
+              After receiving Pet Track Pro GPS Tracking device, please Sign Up in the
+              Pet Track Pro mobile app and choose a plan to subscribe. You may choose
               from monthly plan, 3 months plan or annual plan.You may upgrade
               between plans at any time.
             </div>
@@ -147,7 +147,7 @@ export default function Home() {
             />
             <div role="tabpanel" className="tab-content p-10 text-[#ffffff]">
               A GPS pet tracker doesn’t guarantee finding a lost pet, but it
-              increases the chances. The Whistle Go Explore is accurate, easy to
+              increases the chances. The Pet Track Pro Explore is accurate, easy to
               use, and suitable for cats and dogs. However, its GPS accuracy can
               be finicky in spotty service areas time.
             </div>

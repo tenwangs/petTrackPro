@@ -12,7 +12,6 @@ const LoginPage = () => {
 
   const handleLogin = () => {
 
-    
     // Implement your login logic here
     console.log('Logging in with username:', username, 'and password:', password);
 
