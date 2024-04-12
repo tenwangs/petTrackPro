@@ -13,6 +13,8 @@ export default function Navbar({ children }) {
     { name: "Support", href: "/support" },
     { name: "FAQ", href: "/FAQ" },
     { name: "About Us", href: "/aboutUs" },
+    
+
   ];
   console.log(open);
 
@@ -97,12 +99,17 @@ export default function Navbar({ children }) {
             </ul>
           </div>
               <div className="hidden lg:flex justify-center items-center space-x-5 mr-5">
+                <Link href="/signup">
                 <button className="bg-[#5A92B1]  rounded-full text-[#ffffff] w-28 h-10  hover:bg-white hover:text-[#5a92b1] hover:border hover:border-[#5a92b1] transition-all ease-in-out delay-75">
                   Sign Up
                 </button>
+                </Link>
+
+                <Link href="/login">
                 <button className="border border-[#5A92B1]  rounded-full w-28 h-10 text-[#3D3D3D]  hover:bg-white hover:text-[#5a92b1] transition-all ease-in-out delay-75">
                   Log In
                 </button>
+                </Link>
               </div>
         </div>
         {/* Page content here */}
