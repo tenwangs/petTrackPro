@@ -15,7 +15,11 @@ function page() {
         </div>
       </div>
       <div className='bg-blue-100 w-80 h-60 ml-8 mt-8 rounded-xl'>
-        <div ></div>
+        <div >
+          <div>
+           
+          </div>
+        </div>
       </div>
       </div>
       
