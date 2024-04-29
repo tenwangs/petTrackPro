@@ -9,14 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@fortawesome/fontawesome-svg-core": "^6.5.2",
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
-=======
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
->>>>>>> 7c0f362f07208e43e9c28bb32da7902d3965e6ec
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/material": "^5.15.15",
     "@mui/x-data-grid": "^7.3.0",
@@ -26,14 +23,15 @@
     "eslint": "8.57.0",
     "eslint-config-next": "14.1.4",
     "fusioncharts": "^3.23.0",
+    "google-maps-react": "^2.0.6",
     "material-icons": "^1.13.12",
-    "next": "14.1.4",
+    "next": "^14.1.4",
     "nextjs-progressbar": "^0.0.16",
     "postcss": "8.4.38",
     "rc-progress": "^4.0.0",
-    "react": "18.2.0",
+    "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
-    "react-dom": "18.2.0",
+    "react-dom": "^18.2.0",
     "react-fusioncharts": "^4.0.0",
     "react-icons": "^5.0.1",
     "recharts": "^2.12.6",
