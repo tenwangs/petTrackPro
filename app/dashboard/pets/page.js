@@ -136,7 +136,8 @@ function page() {
             <p>Never leave your furry friends behind!</p>
           </div>
           <div className='p-8 grid grid-rows-1 grid-cols-3 gap-4'>
-            <div className='bg-[#EDFFEF] w-60 h-30 rounded-2xl'>
+            <div className='flex justify-center items-center bg-[#EDFFEF] w-60 h-30 rounded-2xl'>
+
               <div className='rounded-full ml-6 mt-8'>
                 <Image
                   src={Pet}
@@ -159,7 +160,7 @@ function page() {
               </div>
             </div>
 
-            <div className='bg-[#F4F2FF] w-60 h-30 rounded-2xl'>
+            <div className='flex justify-center items-center bg-[#F4F2FF] w-60 h-30 rounded-2xl'>
               <div className='rounded-full ml-6 mt-8 '>
                 <Image
                   src={Pet}
@@ -182,7 +183,7 @@ function page() {
               </div>
             </div>
 
-            <div className='bg-[#FFF2EC] w-60 h-30 rounded-2xl'>
+            <div className='flex justify-center items-center bg-[#FFF2EC] w-60 h-30 rounded-2xl'>
               <div className='rounded-full ml-6 mt-8 '>
                 <Image
                   src={Pet}

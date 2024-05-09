@@ -24,8 +24,9 @@ function Page() {
           <h1 className='text-gray-700 font-semibold text-lg'>Pets</h1>
           <p>Never leave your furry friends behind!</p>
         </div>
-        <div className='p-4 grid grid-rows-1 grid-cols-3 gap-4'>
-          <div className='bg-[#EDFFEF] w-60 h-30 rounded-2xl'>
+        <div className='p-4 grid grid-rows-1 grid-cols-3 gap-3'>
+
+          <div className='flex justify-center items-center bg-[#EDFFEF] w-60 h-30 rounded-2xl'>
             <div className='rounded-full ml-6 mt-8'>
               <Image
                 src={Pet}
@@ -36,7 +37,7 @@ function Page() {
               />
             </div>
 
-            <div className='flex flex-col ml-6'>
+            <div className='flex flex-col ml-6 '>
               <p className='mt-2 text-md text-[#494949] font-semibold'>
                 Domchu
               </p>
@@ -45,7 +46,7 @@ function Page() {
               <p className='text-sm text-[#7B81A6]'>Color: Black and yellow</p>
             </div>
           </div>
-          <div className='bg-[#F4F2FF] w-60 h-30 rounded-2xl'>
+          <div className=' flex justify-center items-center bg-[#F4F2FF] w-60 h-30 rounded-2xl'>
             <div className='rounded-full ml-6 mt-8 '>
               <Image
                 src={Pet}
@@ -66,7 +67,7 @@ function Page() {
             </div>
           </div>
 
-          <div className='bg-[#FFF2EC] w-60 h-30 rounded-2xl'>
+          <div className='flex justify-center items-center bg-[#FFF2EC] w-60 h-30 rounded-2xl'>
             <div className='rounded-full ml-6 mt-8 '>
               <Image
                 src={Pet}
@@ -77,7 +78,7 @@ function Page() {
               />
             </div>
 
-            <div className='flex flex-col ml-6'>
+            <div className='flex flex-col ml-6 mb-5'>
               <p className='mt-2 text-md text-[#494949] font-semibold'>
                 Domchu
               </p>
@@ -89,7 +90,7 @@ function Page() {
         </div>
       </div>
 
-      <div className='w-100 h-80 bg-gray-400 ml-72 mt-10'>
+      <div className='w-100 h-80 bg-gray-400 ml-72 mt-10 shadow shadow-gray-300 rounded-2xl '>
         <p>Google Map</p>
       </div>
     </div>

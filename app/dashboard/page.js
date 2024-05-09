@@ -7,6 +7,26 @@ import { FaTemperatureEmpty, FaBatteryThreeQuarters } from "react-icons/fa6";
 import { Chart } from "primereact/chart";
 import Image from "next/image";
 import Pet from "/app/dashboard/find-pet/domchu.png";
+import { LuSyringe } from "react-icons/lu";
+import { FaUserCircle } from "react-icons/fa";
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { FaChevronDown } from "react-icons/fa6";
+
+const VaccineCard = ({ vaccineName, frequency, date }) => {
+  return (
+    <div className="flex bg-gray-100 rounded-md items-center justify-center gap-3 px-3 py-1">
+      <LuSyringe className="w-5 h-5"/>
+      <div className="flex flex-col justify-start">
+        <p className="font-semibold text-sm">{vaccineName}</p>
+        <div className="flex text-xs">
+          <p className="">{frequency}</p>
+          <span className="px-1">|</span>
+          <p className="">{date}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 function Page() {
   const data = [
@@ -137,6 +157,29 @@ function Page() {
 
   return (
     <div className="w-full p-10">
+
+      <div className="flex justify-end items-center gap-2">
+
+        <div>
+        <IoIosNotificationsOutline className="w-5 h-5" />
+        </div>
+
+        <div>
+      <FaUserCircle className="w-5 h-5" />
+        </div>
+
+        <div>
+        <p>Dorji Penjore</p>
+        </div>
+
+        
+        <div>
+        <FaChevronDown />
+        </div>
+          
+
+
+      </div>
       <div>
         <h1 className="text-3xl font-bold text-[#5A92B1] ml-8">Activity</h1>
       </div>
@@ -182,7 +225,7 @@ function Page() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center item-center bg-[#5A92B1] w-60 min-h-[400px] h-full rounded-lg shadow-md p-2">
+        <div className="flex flex-col justify-center item-center bg-[#5A92B1] w-60 rounded-lg shadow-md p-2">
           <div className="rounded-full  flex justify-center items-center">
             <Image
               src={Pet}
@@ -193,23 +236,38 @@ function Page() {
             />
           </div>
 
-          <div className="flex justify-evenly items-center w-[90%]">
+          <div className="flex justify-evenly items-center w-[90%] ml-3">
             <div className="flex flex-col justify-center items-center gap-2 ">
-              <p>Name</p>
-              <p>Domchuu</p>
+              <p className="text-md text-white font-semibold -mb-2">Bulu</p>
+              <span className="text-xs">NAME</span>
             </div>
-            <div className="flex flex-col justify-center items-center gap-2"></div>
-            <div className="flex flex-col justify-center items-center gap-2"></div>
+
+            <div class="h-10 w-1 bg-gray-400 mx-auto"></div>
+
+            <div className="flex flex-col justify-center items-center gap-2">
+              <p className="text-md text-white font-semibold -mb-2">8 Years</p>
+              <p className="text-xs">AGE</p>
+            </div>
+
+            <div class="h-10 w-1 bg-gray-400 mx-auto"></div>
+            <div className="flex flex-col justify-center items-center gap-2">
+              <p className="text-md text-white font-semibold -mb-2">Female</p>
+              <p className="text-xs">GENDER</p>
+            </div>
           </div>
 
-          <div className="flex justify-center items-center">
-            <div className="bg-white text-black">
-              {/* <img src={require()} */}
-              <div>
-                <p>DHPP vaccine</p>
-                <p>Next Due: 20/21/2025</p>
-              </div>
-            </div>
+          <div className="flex justify-center items-center text-md font-semibold text-white mt-2">
+            <p>Vaccination Schedule</p>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <VaccineCard
+              vaccineName="DHPP vaccine"
+              frequency="Every 3 years"
+              date="20/21/2025"
+            />
+            
+ 
           </div>
         </div>
       </div>
@@ -220,7 +278,17 @@ function Page() {
 
       <div className="w-full">
         <div className="w-2/3  bg-white shadow-md p-4 rounded-lg">
-          <h2 className="text-lg font-semibold mb-4">Activity Overview</h2>
+          <div className="flex justify-end items-center mb-4">
+          <select
+            id="option"
+            value="weekly"
+            onChange="Daily"
+            className="bg-blue-100 border-none rounded-md p-2 text-sm"
+          >
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+          </select>
+        </div>
           <Chart type="line" data={chartData} options={chartOptions} />
         </div>
       </div>

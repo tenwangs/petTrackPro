@@ -79,7 +79,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className='absolute bottom-0 left-0 w-full bg-[#DBEAFF] p-8'>
+        <div className='flex  justify-center items-center bottom-0 left-0 w-full bg-[#DBEAFF] p-8 rounded-3xl'>
           <div className='max-w-screen-lg mx-auto'>
             <h2 className='text-[#5F5F63] text-lg font-semibold mb-4 text-center'>
               Contact Us

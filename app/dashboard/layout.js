@@ -5,40 +5,56 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Paw from "/public/assets/images/pawLogo.png";
-
+import { FaHome } from "react-icons/fa";
+import { GrMapLocation } from "react-icons/gr";
+import { RiHospitalLine } from "react-icons/ri";
+import { BiSolidDog } from "react-icons/bi";
+import { BiSolidMapPin } from "react-icons/bi";
+import { GrUserSettings } from "react-icons/gr";
+import { FiHelpCircle } from "react-icons/fi";
+import { MdLogout } from "react-icons/md";
 
 export default function Dashboard({ children }) {
   const pathname = usePathname();
   const dashLinks = [
     {
+
       name: "Home",
+      icon: <FaHome className="text-xl" />,
       link: "/dashboard",
     },
     {
       name: "Find Pet",
+      icon: <GrMapLocation className="text-xl" />,
       link: "/dashboard/find-pet",
     },
     {
       name: "Veterinary Hospital",
+      icon: <RiHospitalLine className="text-xl" />,
       link: "/dashboard/vet-hospital",
     },
     {
       name: "Pets",
+      icon: <BiSolidDog className="text-xl" />,
       link: "/dashboard/pets",
     },
     {
       name: "Geo-Fences",
+      icon: <BiSolidMapPin className="text-xl" />,
       link: "/dashboard/geo-fences",
     },
     {
-      name: "Setting",
+      name: "User Profile",
+      icon: <GrUserSettings className="text-xl" />,
       link: "/dashboard/setting",
     },
     {
       name: "Help and Support",
+      icon: <FiHelpCircle className="text-xl" />,
       link: "/dashboard/support",
     },
   ];
+
   return (
     <div className="drawer  lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -76,10 +92,11 @@ export default function Dashboard({ children }) {
               <Link
                 className={`${
                   pathname === link.link ? "bg-white text-[#497FA2]" : ""
-                } hover:bg-white hover:text-[#497FA2] font-semibold text-md my-3 py-2`}
+                } hover:bg-white hover:text-[#497FA2] font-semibold  my-3 py-2`}
                 href={link.link}
               >
-                {link.name}
+                {link.icon}
+                <p className="text-md">{link.name}</p>
               </Link>
             </li>
           ))}
@@ -90,6 +107,7 @@ export default function Dashboard({ children }) {
               className="hover:bg-white hover:text-[#497FA2] font-semibold text-md  py-2"
               href="/"
             >
+              <MdLogout className="text-xl" />
                 Logout
             </Link>
           </li>

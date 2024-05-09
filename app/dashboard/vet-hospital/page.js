@@ -92,7 +92,7 @@ function Page() {
           </div>
         </div>
       </div>
-      <div className='w-full bg-gray-400 p-80 h-40 ml-12 '>
+      <div className='shadow shadow-gray-300 rounded-3xl w-full bg-gray-400 p-80 h-40 ml-12 '>
         <p>Googlemap </p>
       </div>
       <div className='relative flex flex-row ml-2 p-4 gap-4 ml-32 mt-4'>
@@ -107,15 +107,15 @@ function Page() {
                 : 'hidden'
             }`}
           >
-            <div className='flex flex-row '>
+            <div className='flex flex-row justify-start items-center'>
               <IoLocationOutline />
               <p className='ml-2'>{item.location}</p>
             </div>
-            <div className='flex flex-row'>
+            <div className='flex flex-row justify-start items-center'>
               <IoTimerOutline />
               <p className='ml-2'>{item.openingTime}</p>
             </div>
-            <div className='flex flex-row'>
+            <div className='flex flex-row justify-start items-center'>
               <IoEarthSharp />
               <p className='ml-2'>{item.website}</p>
             </div>
