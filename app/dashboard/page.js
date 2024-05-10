@@ -11,6 +11,7 @@ import { LuSyringe } from "react-icons/lu";
 import { FaUserCircle } from "react-icons/fa";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { FaChevronDown } from "react-icons/fa6";
+import { BsTransparency } from "react-icons/bs";
 
 const VaccineCard = ({ vaccineName, frequency, date }) => {
   return (
@@ -32,7 +33,7 @@ function Page() {
   const data = [
     {
       name: "Monday",
-      activity: 400,
+      activity: 100,
       sleep: 2400,
       amt: 2400,
     },
@@ -44,31 +45,31 @@ function Page() {
     },
     {
       name: "wednesday",
-      activity: -100,
+      activity: 100,
       sleep: 9800,
       amt: 2290,
     },
     {
       name: "Thursday",
-      activity: 500,
+      activity: 150,
       sleep: 3908,
       amt: 2000,
     },
     {
       name: "Friday",
-      activity: -200,
+      activity: 200,
       sleep: 4800,
       amt: 2181,
     },
     {
       name: "saturday",
-      activity: -250,
+      activity: 232,
       sleep: 3800,
       amt: 2500,
     },
     {
       name: "sunday",
-      activity: 349,
+      activity: 39,
       sleep: 4300,
       amt: 2100,
     },
@@ -112,7 +113,9 @@ function Page() {
           tension: 0.4,
           backgroundColor: data.map((day) =>
             day.activity < 0 ? "#FF0000" : "#82D9DF"
+    
           ),
+          
         },
         // Add more datasets if needed
       ],
@@ -120,7 +123,7 @@ function Page() {
 
     const chartOptions = {
       maintainAspectRatio: false,
-      aspectRatio: 0.6,
+      aspectRatio: 0.8,
       plugins: {
         legend: {
           labels: {
@@ -157,47 +160,72 @@ function Page() {
 
   return (
     <div className="w-full p-10">
-
       <div className="flex justify-end items-center gap-2">
-
         <div>
-        <IoIosNotificationsOutline className="w-5 h-5" />
+          <IoIosNotificationsOutline className="w-5 h-5" />
         </div>
 
         <div>
-      <FaUserCircle className="w-5 h-5" />
+          <FaUserCircle className="w-5 h-5" />
         </div>
 
         <div>
-        <p>Dorji Penjore</p>
+          <p>Dorji Penjore</p>
         </div>
 
-        
         <div>
-        <FaChevronDown />
+          <FaChevronDown />
         </div>
-          
-
-
       </div>
-      <div>
+
+      <div className="flex flex-row justify-start items-center w-full">
+        <div className="w-1/2">
+
         <h1 className="text-3xl font-bold text-[#5A92B1] ml-8">Activity</h1>
+        </div>
+
+        <div className="avatar-group -space-x-6 rtl:space-x-reverse w-1/2 ml-96">
+          <div className="avatar">
+            <div className="w-12">
+              <Image src={require("/public/assets/images/c.jpg")} />
+            </div>
+
+          </div>
+          <div className="avatar">
+            <div className="w-12">
+            <Image src={require("/public/assets/images/d.jpg")} />
+            </div>
+          </div>
+          <div className="avatar">
+            <div className="w-12">
+            <Image src={require("/public/assets/images/domchu.png")} />
+            </div>
+          </div>
+          <div className="avatar">
+            <div className="w-12">
+            <Image src={require("/public/assets/images/R.jpg")}/>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+
       <div className="flex flex-row ml-8 mt-4">
         <div class="grid grid-cols-5 gap-0">
           <div className="bg-[#FFFFFF] w-40 h-60">
             <TbActivityHeartbeat className="w-8 h-8 ml-4 mt-2 text-gray-500" />
             <div className="flex flex-col">
-              <p className="mt-36 ml-4">Activity</p>
-              <p className="ml-4 text-gray-600 font-semibold ">2h48min</p>
+              <p className="mt-36 ml-4">Sleep</p>
+              <p className="ml-4 text-gray-600 font-semibold ">2h 48min</p>
             </div>
           </div>
 
           <div className="bg-[#F5F5F5] w-40 h-60">
             <FaPaw className="w-6 h-6 ml-4 mt-3 text-gray-500" />
             <div className="flex flex-col">
-              <p className="mt-36 ml-4">Rest</p>
-              <p className="ml-4 text-gray-500 font-semibold">0h48min</p>
+              <p className="mt-36 ml-4">Pedometer</p>
+              <p className="ml-4 text-gray-500 font-semibold">256 steps</p>
             </div>
           </div>
 
@@ -217,15 +245,16 @@ function Page() {
             </div>
           </div>
 
-          <div className="bg-gray-200 w-20 h-60">
+          <div className="bg-gray-200 w-40 h-60">
             <FaBatteryThreeQuarters className="w-8 h-8 ml-4 mt-2 text-gray-500" />
-            <div className="flex flex-col">
-              <p className="mt-40 ml-4 font-semibold text-gray-500 ">65%</p>
+            <div className="flex flex-col ">
+            <p className="mt-36 ml-4 text-gray-500">Battery</p>
+            <p className="ml-4 font-semibold text-gray-500 ">65%</p>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center item-center bg-[#5A92B1] w-60 rounded-lg shadow-md p-2">
+        <div className="flex flex-col justify-center item-center bg-[#5A92B1] w-60 rounded-lg shadow-md p-2 ml-20">
           <div className="rounded-full  flex justify-center items-center">
             <Image
               src={Pet}
@@ -266,29 +295,27 @@ function Page() {
               frequency="Every 3 years"
               date="20/21/2025"
             />
-            
- 
           </div>
         </div>
       </div>
 
-      <div className="overflow-auto">
-        <p className="text-3xl font-bold text-[#5A92B1] mt-16 ml-8">Overview</p>
+      <div>
+        <p className="text-3xl font-bold text-[#5A92B1] mt-5 ml-8">Overview</p>
       </div>
 
       <div className="w-full">
-        <div className="w-2/3  bg-white shadow-md p-4 rounded-lg">
+        <div className="w-2/3 bg-white shadow-md p-4 rounded-lg">
           <div className="flex justify-end items-center mb-4">
-          <select
-            id="option"
-            value="weekly"
-            onChange="Daily"
-            className="bg-blue-100 border-none rounded-md p-2 text-sm"
-          >
-            <option value="daily">Daily</option>
-            <option value="weekly">Weekly</option>
-          </select>
-        </div>
+            <select
+              id="option"
+              value="weekly"
+              onChange="Daily"
+              className="bg-blue-100 border-none rounded-md p-2 text-sm"
+            >
+              <option value="daily">Daily</option>
+              <option value="weekly">Weekly</option>
+            </select>
+          </div>
           <Chart type="line" data={chartData} options={chartOptions} />
         </div>
       </div>

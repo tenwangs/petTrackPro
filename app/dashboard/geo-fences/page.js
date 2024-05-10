@@ -209,11 +209,14 @@ const Map = () => {
           <h1>Loading...</h1>
         </div>
       ) : coordinatesList.length ? (
-        <MapContainer
+        <>
+     
+        <MapContainer 
+        className='border-[1px] rounded-xl border-[#ccc] h-full'
           center={[27.5142, 90.4336]}
           zoom={9}
           preferCanvas={true}
-          style={{ width: '100%', height: '600px', position: 'relative' }}
+          style={{ width: '50%',height:"950px", position: 'relative' }}
         >
           <TileLayer
             url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
@@ -231,12 +234,14 @@ const Map = () => {
               checkPetLocation(user) && <Alert key={index} user={user} />
           )}
         </MapContainer>
+        </>
       ) : (
         <div className='flex flex-col items-center justify-center min-h-[50vh]'>
           <p>Location not found</p>
           <p className='text-muted-foreground'>No pets with location found</p>
         </div>
       )}
+      
     </>
   );
 };

@@ -1,262 +1,163 @@
-'use client';
-import { useState } from 'react';
-import Image from 'next/image';
-import Profile from '/public/assets/images/profile.png';
-import Pet from '/public/assets/images/pet.png';
-import {
-  faUser,
-  faEnvelope,
-  faPhone,
-  faGenderless,
-  faMapMarkerAlt,
-  faCalendar,
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faDog,
-  faVenusMars,
-  faCalendarAlt,
-  faPaw,
-  faWeightHanging,
-  faArrowsAltV,
-} from '@fortawesome/free-solid-svg-icons';
-
-const Page = () => {
-  const [profile, setProfile] = useState({
-    name: '',
-    email: '',
-    phoneNumber: '',
-    gender: '',
-    address: '',
-    age: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setProfile((prevProfile) => ({
-      ...prevProfile,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    console.log(profile);
-  };
-
-  const handlePhotoChange = (e) => {
-    console.log('Photo changed:', e.target.files[0]);
-  };
-
+"use client";
+import { useState } from "react";
+import Image from "next/image"
+function Page() {
+  const [active, setActive] = useState(true);
   return (
-    <div className='container mx-auto p-4'>
-      <h2 className='text-[#5A92B1] text-lg font-bold mb-4'>User Profile</h2>
-      <div className='flex flex-row'>
-        <div className='bg-[#EBF5FC] shadow-lg rounded-md p-16 w-64 h-72 flex items-center justify-center mr-4'>
-          <Image
-            src={Profile}
-            alt='login'
-            className='h-44 w-44 object-cover rounded-full'
-          />
-        </div>
-
-        <div className='bg-[#EBF5FC] shadow-lg rounded-md p-4 flex-1'>
-          <form onSubmit={handleSubmit}>
-            <div className='grid grid-cols-2 gap-6 mt-6'>
-              <div className='relative ml-32 '>
-                <input
-                  type='text'
-                  name='name'
-                  placeholder='Jigme Choden'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-10 mt-2 relative text-center'
-                  onChange={handleChange}
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faUser} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-
-              <div className='relative'>
-                <input
-                  type='text'
-                  placeholder='Female'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-8 mt-2 text-center '
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faGenderless} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-
-              <div className='relative ml-32'>
-                <input
-                  type='text'
-                  placeholder='Jigme@gmail.com'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-8 mt-2 relative text-center'
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-
-              <div className='relative'>
-                <input
-                  type='text'
-                  placeholder='Changzamtog,Thimphu'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-8 mt-2 relative text-center'
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faMapMarkerAlt} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-
-              <div className='relative ml-32'>
-                <input
-                  type='text'
-                  placeholder='17355266'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-8 mt-2 relative text-center'
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faPhone} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-
-              <div className='relative'>
-                <input
-                  type='text'
-                  placeholder='24 year'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-8 mt-2 relative text-center'
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faCalendar} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-            </div>
-
-            <div className='rounded-lx p-4 flex-1 relative'>
-              <button
-                type='submit'
-                className='border border-[#1579B1] text-[#1579B1] px-4 py-2 rounded-lg absolute top-4 right-4'
-              >
-                Edit
-              </button>
-            </div>
-          </form>
+    <div className="h-screen w-full">
+    <div className="w-[95%] h-[90%] mx-auto my-10 rounded-xl border-2  bg-[##E0F1F6] flex flex-col justify-start items-start relative">
+      <div className="avatar  absolute top-12 left-10">
+        <div className="w-48 rounded-full ring ring-white ring-offset-[#5A92B1] ring-offset-4">
+          <Image src={require("/public/assets/images/profile.png")} />
         </div>
       </div>
+      <div className="bg-[#5A92B1] w-full h-[150px] flex justify-start items-end ">
+        <h1 className="text-white text-3xl font-semibold ml-[275px]">
+          Dorji Penjor
+        </h1>
+      </div>
+      <div
+        role="tablist"
+        className="tabs   #text-[#5A92B1] ml-[275px] mt-2"
+      >
+        <a
+          role="tab"
+          className={`tab text-lg font-semibold ${
+            active ? " text-[#5A92B1] border-[#5a92b1] border-b-2" : ""
+          }`}
+          onClick={() => {
+            setActive(true);
+          }}
+        >
+          Personal{" "}
+        </a>
+        <a
+          role="tab"
+          className={`tab text-lg font-semibold ${
+            !active ? "text-[#5A92B1] border-[#5a92b1] border-b-2" : ""
+          }`}
+          onClick={() => {
+            setActive(false);
+          }}
+        >
+          Password Settings
+        </a>
+      </div>
+      <div className="w-[95%] h-[60%] mx-auto pt-[100px]">
+        {active?
+        <div className="personal grid grid-cols-2 gap-5 justify-items-center">
+       
 
-      <h2 className='text-[#5A92B1] text-lg font-bold mb-4'>Pet Profile</h2>
-      <div className='flex flex-row'>
-        <div className='bg-[#EBF5FC] shadow-lg rounded-md p-16 w-64 h-72 flex items-center justify-center mr-4'>
-          <Image
-            src={Pet}
-            alt='pet'
-            className='h-32 w-32 object-cover rounded-full'
+        <label className="form-control w-full max-w-xl">
+          <div className="label">
+            <span className="label-text text-lg font-medium">Name: </span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full "
           />
+          
+        </label>
+        <label className="form-control w-full max-w-xl">
+          <div className="label">
+            <span className="label-text text-lg font-medium">Gender: </span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full "
+          />
+          
+        </label>
+        <label className="form-control w-full max-w-xl">
+          <div className="label">
+            <span className="label-text text-lg font-medium">Email: </span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full "
+          />
+          
+        </label>
+        <label className="form-control w-full max-w-xl">
+          <div className="label">
+            <span className="label-text text-lg font-medium">Address: </span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full "
+          />
+          
+        </label>
+        <label className="form-control w-full max-w-xl">
+          <div className="label">
+            <span className="label-text text-lg font-medium">Contact Number: </span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full "
+          />
+          
+        </label>
+        <label className="form-control w-full max-w-xl">
+          <div className="label">
+            <span className="label-text text-lg font-medium">Date of Birth: </span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full "
+          />
+          
+        </label>
+        <button className="mt-4 max-w-xl bg-[#5A92B1] shadow-md border-none hover:bg-[#5A92B1]/80 text-white btn text-xl w-full"> Edit</button>
+        </div>:
+        <div className="gap-5 space-y-5 pl-14">
+            <label className="form-control w-full max-w-xl">
+          <div className="label">
+            <span className="label-text text-lg font-medium">Current Password * </span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full "
+          />
+          
+        </label>
+        <label className="form-control w-full max-w-xl">
+          <div className="label">
+            <span className="label-text text-lg font-medium">New Password * </span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full "
+          />
+          
+        </label>
+        <label className="form-control w-full max-w-xl mb-10">
+          <div className="label">
+            <span className="label-text text-lg font-medium">Confirm Password * </span>
+          </div>
+          <input
+            type="text"
+            placeholder="Type here"
+            className="input input-bordered w-full "
+          />
+          
+        </label>
+        <button className=" max-w-xl bg-[#5A92B1] shadow-md border-none hover:bg-[#5A92B1]/80 text-white btn text-xl w-full"> Update Password</button>
         </div>
+        }
 
-        <div className='bg-[#EBF5FC] shadow-lg rounded-md p-4 flex-1'>
-          <form onSubmit={handleSubmit}>
-            <div className='grid grid-cols-2 gap-6 mt-6'>
-              <div className='relative ml-32 '>
-                <input
-                  type='text'
-                  name='name'
-                  placeholder='Domchu'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-10 mt-2 relative text-center'
-                  onChange={handleChange}
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faDog} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-
-              <div className='relative'>
-                <input
-                  type='text'
-                  name='breed'
-                  placeholder='Golden Retriever'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-8 mt-2 text-center '
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faPaw} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-
-              <div className='relative ml-32'>
-                <input
-                  type='text'
-                  name='gender'
-                  placeholder='Female'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-8 mt-2 relative text-center'
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faVenusMars} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-
-              <div className='relative'>
-                <input
-                  type='text'
-                  name='weight'
-                  placeholder='20 kg'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-8 mt-2 relative text-center'
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faWeightHanging} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-
-              <div className='relative ml-32'>
-                <input
-                  type='text'
-                  name='age'
-                  placeholder='2 months'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-8 mt-2 relative text-center'
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faCalendarAlt} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-
-              <div className='relative'>
-                <input
-                  type='text'
-                  name='height'
-                  placeholder='30 cm'
-                  className='border border-[#1579B1] rounded-lg p-4 w-80 h-7 bg-white text-[#014550] pl-8 mt-2 relative text-center'
-                />
-                <div className='absolute left-3 top-3 text-[#1579B1]'>
-                  <FontAwesomeIcon icon={faArrowsAltV} />
-                </div>
-                <div className='absolute left-8 top-2 h-7 bg-[#1579B1] w-0.5'></div>
-              </div>
-            </div>
-
-            <div className='rounded-lx p-4 flex-1 relative'>
-              <button
-                type='submit'
-                className='border border-[#1579B1] text-[#1579B1] px-4 py-2 rounded-lg absolute top-4 right-4'
-              >
-                Edit
-              </button>
-            </div>
-          </form>
-        </div>
+        
       </div>
     </div>
+    </div>
   );
-};
-
+}
 export default Page;

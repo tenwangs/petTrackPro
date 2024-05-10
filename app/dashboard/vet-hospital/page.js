@@ -7,6 +7,7 @@ import {
 } from 'react-icons/io5';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { FaSearch } from 'react-icons/fa';
+import Iframe from 'react-iframe';
 
 function Page() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,19 +15,19 @@ function Page() {
     // Your list of items here
     // For demonstration, I'm using placeholder elements
     {
-      location: 'Location 1',
+      location: 'Phuntsholing Thromde Veterinary Hospital',
       openingTime: '9:00 AM - 5:00 PM',
-      website: 'example.com/location1',
+      website: 'http://www.ncah.gov.bt/',
     },
     {
-      location: 'Location 2',
+      location: 'National Center of Animal Health',
       openingTime: '10:00 AM - 6:00 PM',
-      website: 'example.com/location2',
+      website: 'http://www.ncah.gov.bt/',
     },
     {
-      location: 'Location 3',
+      location: 'National Veterinary Hospital',
       openingTime: '10:00 AM - 6:00 PM',
-      website: 'example.com/location2',
+      website: 'http://www.ncah.gov.bt/',
     },
     {
       location: 'Location 4',
@@ -77,23 +78,19 @@ function Page() {
   };
 
   return (
-    <div className='mt-8'>
+    <div className=''>
+        <div>
+        <p className="text-3xl font-bold text-[#5A92B1] mt-16 ml-8">Nearby Veterinary Hospital</p>
+      </div>
       <div className='flex justify-center items-center p-4'>
         <div className='fixed top-4 right-4'>
-          <div className='relative'>
-            <input
-              type='text'
-              placeholder='Search'
-              className='border border-[#1579B1] rounded-lg p-2 w-72 mr-44 bg-white text-gray-800 pl-8'
-            />
-            <div className='absolute top-0 right-0 mt-3 mr-48'>
-              <FaSearch className='text-black' />
-            </div>
-          </div>
+      
         </div>
       </div>
       <div className='shadow shadow-gray-300 rounded-3xl w-full bg-gray-400 p-80 h-40 ml-12 '>
-        <p>Googlemap </p>
+        {/* <p>Googlemap </p> */}
+        <Iframe className="w-full h-full" src="https://www.google.com/maps/search/veterinary+hospitals+and+animal+husbandry+in+Bhutan+/@27.4122549,89.7853179,9z?entry=ttu" style="border:0px #ffffff none;" name="myiFrame" ></Iframe>
+        
       </div>
       <div className='relative flex flex-row ml-2 p-4 gap-4 ml-32 mt-4'>
         {items.map((item, index) => (

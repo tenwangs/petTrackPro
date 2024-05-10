@@ -13,22 +13,16 @@ import { FaBatteryThreeQuarters } from 'react-icons/fa6';
 function page() {
   return (
     <div className='flex flex-row'>
+      
       <div className='ml-16'>
+      <div>
+        <p className="text-3xl font-bold text-[#5A92B1] mt-16 ml-8">Pets </p>
+      </div>
         <div className='flex justify-center items-center p-4'>
           <div className='fixed top-4 right-4'>
-            <div className='relative'>
-              <input
-                type='text'
-                placeholder='Search'
-                className='border border-[#1579B1] rounded-lg p-2 w-72 mr-80 bg-white text-gray-800 pl-8'
-              />
-              <div className='absolute top-0 right-40 mt-3 mr-44'>
-                <FaSearch className='text-black' />
-              </div>
-            </div>
           </div>
         </div>
-        <div className='grid grid-rows-1 grid-cols-3 gap-4 rounded-xl mt-16 ml-8'>
+        <div className='grid grid-rows-1 grid-cols-3 gap-4 rounded-xl mt-5 ml-8'>
           <div className='bg-[#EDFFEF] w-60 h-20 flex flex-row rounded-xl'>
             <Circle
               percent={80}
@@ -209,7 +203,7 @@ function page() {
         </div>
       </div>
 
-      <div className='flex flex-row '>
+      <div className='flex flex-row rounded-lg'>
         <div className='border border-shadow-400 ml-20 w-80 flex flex-row'>
           <IoMdNotificationsOutline className='w-6 h-6 flex ml-20 mt-5' />
           <div className='mt-2 '>
