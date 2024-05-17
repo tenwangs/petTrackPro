@@ -106,12 +106,18 @@ export default function Navbar({ children }) {
           </div>
            
               <div className="flex flex-col justify-end items-center space-y-2">
+              <Link href="/signup">
+
                 <button className="bg-[#5A92B1]  rounded-full text-[#ffffff] w-[80%] h-10 pl-6 pr-6 hover:bg-white hover:text-[#5a92b1] hover:border-[#5a92b1] border transition-all ease-in-out delay-75">
                   Sign Up
                 </button>
+                </Link>
+                <Link href="/login">
+
                 <button className="border border-[#5A92B1] rounded-full w-[80%] h-10 text-[#3D3D3D]  hover:bg-white hover:text-[#5a92b1] transition-all ease-in-out delay-75">
                   Log In
                 </button>
+                </Link>
               </div>
         </ul>
       </div>

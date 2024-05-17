@@ -7,7 +7,7 @@ import { AiOutlineGlobal } from "react-icons/ai";
 const Card = ({ icon, title, text }) => {
   return (
     <div className="bg-gray-100 rounded-xl flex flex-col  space-y-4  items-center w-[90%] md:w-1/2 lg:w-1/4 h-[400px]  group hover:text-[#fff] hover:bg-[#5A92B1] transition-all ease-in-out delay-75 px-10">
-      {icon}
+      {icon} 
 
       <Image
         src="/assets/images/Union.png"
@@ -29,7 +29,7 @@ const Card = ({ icon, title, text }) => {
 export default function Home() {
   return (
     <main className="bg-[#FFFFFF] border border-shadow-gray-100 ">
-      <div className="w-full h-2/5 bg-[#5A92B1] flex justify-center">
+      <div className="w-full h-2/5 bg-[#5A92B1] flex justify-center p-5 lg:p-3">
         <div className=" w-[90%] lg:w-1/2 flex flex-col justify-center items-start pl-10">
           <p className="text-white text-6xl font-semibold">
             GPS Pet Tracking <br></br> For Pet Dogs
